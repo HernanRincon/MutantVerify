@@ -76,7 +76,7 @@ public class MutantVerify {
 			
 			ValidationDnaData dataFalse = verify.verifyDna(dnaFalse);
 			if (dataFalse.isValidDna()) {
-				logger.log(Level.INFO,"is not mutant:"+verify.isMutant(dnaFalse));
+				logger.log(Level.INFO,"is mutant:"+verify.isMutant(dnaFalse));
 			} else {
 				logger.log(Level.SEVERE,dataFalse.getMessage());
 			}
